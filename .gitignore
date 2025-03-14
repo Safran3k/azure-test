@@ -85,3 +85,11 @@ connect.lock
 /libpeerconnection.log
 testem.log
 /typings
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs

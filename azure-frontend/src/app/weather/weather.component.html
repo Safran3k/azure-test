@@ -1,0 +1,33 @@
+<div class="page-container">
+  <div class="card-wrapper">
+    <div class="card-background"></div>
+    <div class="card">
+      <div class="card-content">
+        <div class="header">
+          <h1 class="title">Időjárás előrejelzés</h1>
+          <p class="subtitle">API által szolgáltatott adatok</p>
+        </div>
+
+        <div class="content-section" *ngIf="loading">
+          <p class="text-center">Adatok betöltése...</p>
+        </div>
+
+        <div class="content-section" *ngIf="error">
+          <p class="text-red-500">{{ error }}</p>
+        </div>
+
+        <div class="content-section" *ngIf="!loading && !error">
+          <div class="weather-container">
+            <div class="weather-card" *ngFor="let forecast of forecasts">
+              <div class="weather-date">{{ forecast.date }}</div>
+              <div class="weather-temp">
+                {{ forecast.temperatureC }}°C / {{ forecast.temperatureF }}°F
+              </div>
+              <div class="weather-summary">{{ forecast.summary }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
