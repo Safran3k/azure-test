@@ -52,3 +52,36 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Angular / Frontend
+node_modules/
+dist/
+.angular/
+npm-debug.log
+yarn-error.log
+.sass-cache/
+package-lock.json
+yarn.lock
+.env
+coverage/
+tmp/
+out-tsc/
+bazel-out/
+.DS_Store
+Thumbs.db
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+connect.lock
+/libpeerconnection.log
+testem.log
+/typings
