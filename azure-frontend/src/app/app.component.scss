@@ -1,0 +1,55 @@
+.page-container {
+  @apply min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12;
+}
+
+.card-wrapper {
+  @apply relative py-3 sm:max-w-xl sm:mx-auto;
+}
+
+.card-background {
+  @apply absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl;
+}
+
+.card {
+  @apply relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20;
+}
+
+.card-content {
+  @apply max-w-md mx-auto;
+}
+
+.header {
+  @apply text-center;
+}
+
+.title {
+  @apply text-3xl font-extrabold text-gray-900;
+}
+
+.subtitle {
+  @apply mt-2 text-lg text-gray-600;
+}
+
+.content-section {
+  @apply mt-8 space-y-6;
+}
+
+.button-container {
+  @apply flex items-center justify-center;
+}
+
+.primary-button {
+  @apply px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-700 transition-colors;
+}
+
+.status-indicator {
+  @apply flex items-center justify-center;
+}
+
+.indicator-dot {
+  @apply h-4 w-4 bg-green-500 rounded-full mr-2;
+}
+
+.status-text {
+  @apply text-gray-700;
+}
